@@ -1,4 +1,4 @@
-function showPage(pageId) {
+function showPage(pageId, button) {
 
     // Hide every page
     const pages = document.querySelectorAll(".page");
@@ -7,34 +7,31 @@ function showPage(pageId) {
         page.classList.remove("active-page");
     });
 
-
-    // Show selected page
+    // Show the selected page
     const selectedPage = document.getElementById(pageId);
 
     if (selectedPage) {
         selectedPage.classList.add("active-page");
     }
 
-
     // Remove active status from every button
     const buttons = document.querySelectorAll(".nav-button");
 
-    buttons.forEach(button => {
-        button.classList.remove("active");
+    buttons.forEach(navButton => {
+        navButton.classList.remove("active");
     });
 
-
     // Make the clicked button active
-    const clickedButton = event.target;
-
-    clickedButton.classList.add("active");
-
+    if (button) {
+        button.classList.add("active");
+    }
 
     // Scroll to the top
     window.scrollTo({
         top: 0,
         behavior: "smooth"
     });
+}    });
 
     .standard {
     margin-top: 35px;
