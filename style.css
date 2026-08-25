@@ -362,3 +362,19 @@ body {
         font-size: 10px;
     }
 }
+.portfolio-analysis h5 {
+    color: #172b4d;
+    font-size: 15px;
+    margin-top: 25px;
+    margin-bottom: 8px;
+}
+
+.portfolio-analysis h4 a {
+    color: #58749b;
+    text-decoration: none;
+}
+
+.portfolio-analysis h4 a:hover {
+    color: #172b4d;
+    text-decoration: underline;
+}
