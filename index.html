@@ -633,7 +633,95 @@
     decided to remove beam CD from the design to simplify the truss while
     still maintaining its ability to support the applied load.
 </p>
+<img
+    src="images/A2_pic3.jpg"
+    alt="Labeled truss joints and force analysis"
+    class="assignment-image"
+>
 
+<p>
+    After solving for the forces in the truss members, I found the highest
+    force to be 24.04 kN in both members C_AB and D_AB. The issue was that
+    both members connected to member AB at the same point, effectively
+    doubling the force acting at that location. Because of this, I
+    multiplied the 24.04 kN force by 2 to determine the maximum force that
+    the truss needed to support. This gave me a maximum force of 48.08 kN,
+    or 48,080 N.
+</p>
+
+<p>
+    I then calculated the cross-sectional area needed for the truss members
+    to handle this force. I used the yield strength of A500 steel, which I
+    found to be 228 MPa from the source below. Using the maximum force and
+    the yield strength, I calculated the required area before the safety
+    factor to be 210.88 mm².
+</p>
+
+<p>
+    The required safety factor for the truss was 3.5, so I multiplied the
+    initial required area by the safety factor. This resulted in a required
+    cross-sectional area of 738.07 mm².
+</p>
+
+<p>
+    I chose to use a square cross-section for the truss members. To find the
+    side length of the square, I took the square root of the required
+    cross-sectional area. This gave me a side length of approximately
+    27.17 mm.
+</p>
+
+<p>
+    <strong>
+        Side length = √738.07 mm² = 27.17 mm
+    </strong>
+</p>
+
+<p>
+    After finding the required cross-sectional area, I calculated the
+    approximate weight of the truss. I first added the lengths of all the
+    truss members, which gave me a total length of approximately 2.88 m.
+    I then multiplied the total length by the cross-sectional area to find
+    the total volume of steel in the truss. The calculated volume was
+    approximately 0.00213 m³.
+</p>
+
+<p>
+    I found the density of A500 steel to be approximately 7,800 kg/m³ from
+    the second source below. I then multiplied the density by the volume
+    of the truss to calculate its approximate mass.
+</p>
+
+<p>
+    <strong>
+        Mass = (7,800 kg/m³)(0.00213 m³) = 16.614 kg
+    </strong>
+</p>
+
+<p>
+    Therefore, the approximate mass of the truss is 16.6 kg before adding
+    the connecting pins.
+</p>
+
+<p>
+    <strong>Source 1:</strong>
+    <a
+        href="https://www.tottentubes.com/astm-a500-specification-information"
+        target="_blank"
+        rel="noopener noreferrer">
+        A500 Steel | ASTM A500 | Specifications
+    </a>
+</p>
+
+<p>
+    <strong>Source 2:</strong>
+    <a
+        href="https://beamdimensions.com/materials/Steel/ASTM/ASTM_A500/"
+        target="_blank"
+        rel="noopener noreferrer">
+        ASTM A500 Material Properties | Steel Properties, Yield Strength,
+        Steel Specifications
+    </a>
+</p>
     </div>
 
 </section>
