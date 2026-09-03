@@ -908,9 +908,89 @@
     class="assignment-image"
 >
 
+<h5>
+    Stress Comparison
+</h5>
 
+<p>
+    I compared the stress in each truss member to the 228 MPa yield
+    strength of the A500 steel. I used the cross-sectional area of
+    738.21 mm², which comes from my 27.17 mm by 27.17 mm square
+    cross section. The stress was calculated using σ = F/A.
+</p>
 
+<p>
+    Member AB has a compressive stress of approximately 18.06 MPa.
+    Member BC has a tensile stress of approximately 22.58 MPa.
+    Member DA has a compressive stress of approximately 22.58 MPa.
+    Member D_BA has a tensile stress of approximately 32.57 MPa.
+    Member C_AB has a compressive stress of approximately 32.57 MPa.
+</p>
 
+<p>
+    The highest stress in the truss is member D_BA and C_AB at 32.57 MPa, which is
+    much lower than the 228 MPa yield strength of the A500 steel. This
+    means that yielding is unlikely under the design load. Since the
+    steel is ductile, fracture is also unlikely before significant
+    yielding occurs. For the compression members, however, buckling is
+    still important to consider because a compression member can become
+    unstable before reaching yield strength.
+</p>
+
+<p>
+    Based on these stress comparisons, I would expect the tension members
+    to be most likely to fail by yielding if they were overloaded, while
+    the compression members would be more likely to fail by buckling.
+    The largest compression force occurs in member C_AB at 24.04 kN, so
+    this is the compression member I would be most concerned about.
+</p>
+
+<h5>
+    Buckling Check
+</h5>
+
+<p>
+    Since AB, DA, and C_AB are compression members, I also checked their
+    likelihood of buckling. Buckling is important for compression members
+    because a member can become unstable before the material reaches its
+    yield strength. AISC explains that the buckling strength of a
+    compression member depends on factors such as its length, stiffness,
+    and slenderness.
+</p>
+
+<p>
+    I used the Euler buckling equation, P_cr = π²EI/(KL)², to check. 
+    I used an elastic modulus of approximately 200,000
+    MPa and assumed pinned connections at the ends, giving K = 1. Using
+    my 27.17 mm by 27.17 mm square cross section, the estimated critical
+    buckling loads were 62.25 kN for AB, 358.56 kN for DA, and 193.86 kN
+    for C_AB.
+</p>
+
+<p>
+    Member AB has a compression force of 13.334 kN, compared to an
+    estimated buckling load of 62.25 kN. Member DA has a compression force
+    of 16.667 kN compared to 358.56 kN, and member C_AB has a compression
+    force of 24.04 kN compared to 193.86 kN. Based on this simplified
+    Euler check, all three compression members have buckling loads higher
+    than their applied loads.
+</p>
+
+<p>
+    This means that buckling is the main failure mode that needs to be
+    considered for the compression members, but it is not expected to
+    occur under the design load based on this calculation. To
+    further reduce the likelihood of buckling, I could increase the
+    cross-sectional dimensions or shorten the unsupported length.
+
+<p>
+    <strong>Source:</strong>
+    <a href="https://www.aisc.org/globalassets/aisc/publications/standards/a360-16-spec-and-commentary_june-2019_linked.pdf"
+       target="_blank"
+       rel="noopener noreferrer">
+        AISC 360 Specification and Commentary
+    </a>
+</p>
 
 
 
