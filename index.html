@@ -1473,7 +1473,49 @@
 <img src="images/IMG_9703.jpeg" alt="Link design calculations"
      style="max-width: 100%; height: auto;">
 
+<h3>
+    Lessons Learned
+</h3>
 
+<h4>
+    Governing Failure Mode
+</h4>
+
+<p>
+    For Part A, stress governed the final dimension. The stress analysis
+    required a diameter of 1.104 in, while the stiffness analysis only
+    required a diameter of 0.596 in. This means the stress requirement
+    was 0.508 in larger than the stiffness requirement. Therefore, the
+    final diameter was based on the stress analysis.
+</p>
+
+<h4>
+    Error Propagation
+</h4>
+
+<p>
+    One value that carried from an earlier feature into a later feature
+    was the 1.104 in diameter from Part A. This dimension was used when
+    designing the link that connects to Feature A. Because the value came
+    from the stress-controlled design of Part A, it was important to
+    carry the correct dimension into the link design. I also checked the
+    link using the larger hole size, so an error in the diameter would
+    have affected the required cross-sectional area of the link.
+</p>
+
+<h4>
+    Assumption Sensitivity
+</h4>
+
+<p>
+    One important assumption I made was treating the features as simple
+    beam or axial-loading models so that fundamental strength of
+    materials equations could be used. If the actual loading or geometry
+    caused significant shear or more complex loading, the calculated
+    stresses and deflections could be different. This could require
+    larger dimensions than the ones calculated using the simplified
+    models.
+</p>
 
 
 
