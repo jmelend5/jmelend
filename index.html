@@ -1627,7 +1627,141 @@
         <section id="assignment7" class="page">
             <h2>Assignment 7</h2>
             <div class="section-box">
-                <p>Assignment 7 content goes here.</p>
+                <h3>Initial Bracket Simulation</h3>
+
+       <p>
+    I started by importing my original bracket from the previous
+    assignments into the Simulation workspace in Fusion. I set up
+    the static stress study using the assigned material, 800 lb applied
+    loads, and constraints, then ran the simulation to evaluate
+    the performance of the original design.
+</p>
+
+<figure>
+    <img src="a7_ss1.png" alt="Original bracket static stress simulation results">
+    <figcaption>Figure 1: Static stress simulation results for the original bracket.</figcaption>
+</figure>
+
+<figure>
+    <img src="a7_sspart1.png" alt="Original bracket mass properties">
+    <figcaption>Figure 2: Mass properties of the original bracket.</figcaption>
+</figure>
+
+<p>
+    From the initial simulation results, I obtained a safety factor of
+    0.782, a maximum displacement of 0.019 inches, and a weight of 46.594 oz. The safety factor
+    was too low for the bracket to meet the required design criteria, so
+    I decided to modify Part B of the bracket. For Design II, I increased
+    the size of Part B to improve the bracket's structural performance
+    and reduce its displacement under the applied load.
+</p>
+
+<figure>
+    <img src="a7_ss4.png" alt="Design II bracket with enlarged Part B">
+    <figcaption>Figure 3: Design II with an enlarged Part B.</figcaption>
+</figure>
+
+<p>
+    After changing the design, I ran the simulation again and obtained the following results.
+</p>
+
+<figure>
+    <img src="a7_ss5.png" alt="Design II static stress simulation results">
+    <figcaption>Figure 4: Static stress simulation results for Design II.</figcaption>
+</figure>
+
+<figure>
+    <img src="a7_sspart2.png" alt="Design II bracket mass properties">
+    <figcaption>Figure 5: Mass properties of Design II.</figcaption>
+</figure>
+
+                
+<p>
+    From the second simulation, I obtained a safety factor of 2.862,
+    a maximum deflection of 0.004 inches, and a weight of 48.669 oz.
+    Once again, the maximum deflection occurred at Part B. Although
+    a safety factor of 2.862 was a significant improvement, I wanted
+    to ensure that Part B would remain strong enough under the applied
+    load. To further improve the bracket's structural performance
+    and increase its safety margin, I decided to increase the size
+    of Part B again.
+</p>
+
+<figure>
+    <img src="a7_ss7.png" alt="Final bracket design with increased Part B">
+    <figcaption>Figure 6: Final design with Part B increased again.</figcaption>
+</figure>
+
+<p>
+    I ran the simulation one last time and obtained the following results.
+</p>
+
+<figure>
+    <img src="a7_ss6.png" alt="Final bracket static stress simulation results">
+    <figcaption>Figure 7: Final static stress simulation results.</figcaption>
+</figure>
+
+<figure>
+    <img src="a7_sspart3.png" alt="Final bracket mass properties">
+    <figcaption>Figure 8: Mass properties of the final bracket design.</figcaption>
+</figure>
+
+                
+<p>
+    This time, I obtained a safety factor of 2.088, a maximum deflection
+    of 0.002 inches, and a weight of 49.369 oz. Although the safety factor
+    decreased compared to my previous design, I believe this may have
+    been caused by the changes I made while increasing the size of Part B.
+    However, the final design showed a significant improvement in
+    deflection compared to my previous two models. With the deflection
+    reduced to 0.002 inches, the bracket demonstrated greater stiffness
+    under the applied load, making this my preferred design based on
+    the simulation results.
+</p>
+
+
+<h3>Mesh Convergence and Model Validation</h3>
+
+<p>
+    I validated my final bracket design by running simulations with
+    progressively finer meshes, decreasing the element size from
+    10% to 5%, 2.5%, and finally 1%.
+</p>
+
+<table>
+    <thead>
+        <tr>
+            <th>Mesh Size</th>
+            <th>Max Stress (MPa)</th>
+            <th>Max Displacement (in)</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr><td>10%</td><td>49.845</td><td>0.002</td></tr>
+        <tr><td>5%</td><td>65.639</td><td>0.002</td></tr>
+        <tr><td>2.5%</td><td>87.879</td><td>0.002</td></tr>
+        <tr><td>1%</td><td>115.876</td><td>0.003</td></tr>
+    </tbody>
+</table>
+
+<figure>
+    <img src="a7_ss8.png" alt="Final mesh stress simulation results">
+    <figcaption>Figure 9: Final stress results using a 1% mesh size.</figcaption>
+</figure>
+
+<p>
+    The maximum stress increased as the mesh became finer. The
+    difference between the last two stress results was 31.86%,
+    exceeding the 7% convergence criterion. After three refinement
+    attempts, the stress results had not converged, so I documented
+    the results as required by the assignment.
+</p>
+
+
+
+
+
+                
             </div>
         </section>
 
